@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tentang Diri</title>
+    <link rel="stylesheet" href="tentangdiri.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h1>Tentang Diri</h1>
+        </div>
+        <img src="ika.jpeg" alt="ika" height="300px">
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const nama = params.get('nama');
+            const usia = params.get('usia');
+            const jk = params.get('jk');
+            const alamat = params.get('alamat');
+            const hobi = params.get('hobi');
+
+            document.write("<p>Halo, nama saya " + nama + ", usia saya " + usia + " tahun. Saya seorang " + jk + " yang tinggal di " + alamat + ". Saya punya beberapa hobby, yaitu " + hobi + ".</p>");
+        </script>
+        <div class="btn">
+            <button class="next"><a href="hobi.html">Hobby</a></button>
+            <button class="back"><a href="utama.html">Home</a></button>
+        </div>
+    </section>
+</body>
+
+</html>
